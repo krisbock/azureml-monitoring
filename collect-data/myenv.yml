@@ -1,0 +1,21 @@
+# Conda environment specification. The dependencies defined in this file will
+# be automatically provisioned for runs with userManagedDependencies=False.
+
+# Details about the Conda environment file format:
+# https://conda.io/docs/user-guide/tasks/manage-environments.html#create-env-file-manually
+
+name: azure_monitoring
+dependencies:
+  # The python interpreter version.
+  # Currently Azure ML only supports 3.5.2 and later.
+- python=3.6.2
+
+- pip:
+  - azureml-defaults~=1.42.0
+  - azureml-monitoring
+  - inference-schema[numpy-support]
+- numpy==1.19.5
+- scikit-learn==0.22.1
+channels:
+- anaconda
+- conda-forge

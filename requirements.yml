@@ -1,0 +1,12 @@
+name: azureml_monitoring
+dependencies:
+  - python=3.6.2
+  - pip:
+    - azureml-defaults~=1.42.0
+    - azureml-monitoring
+    - 'inference-schema[numpy-support]'
+  - numpy
+  - scikit-learn==0.20.3
+channels:
+  - anaconda
+  - conda-forge
