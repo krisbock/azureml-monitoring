@@ -3,7 +3,7 @@ import pickle
 import json
 import numpy
 from azureml.monitoring import ModelDataCollector
-from sklearn.externals import joblib
+import joblib
 from sklearn.linear_model import Ridge
 import time
 
